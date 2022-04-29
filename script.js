@@ -52,7 +52,7 @@ function helyCsereFeherrel(hanyasraKattintott, elsoSzam, masodikSzam, harmadikSz
     const feherSzama = feherHely();
     let feherreCsere = `szamok/${feherSzama}.svg`;
     let kattintasCsere = `szamok/${hanyasraKattintott}.svg`
-    if (feherSzama == elsoSzam|| feherSzama == masodikSzam || feherSzama == harmadikSzam) {
+    if (feherSzama == elsoSzam|| feherSzama == masodikSzam || feherSzama == harmadikSzam || feherSzama == negyedikSzam) {
         eval(`hely${feherSzama}`).setAttribute("src", ottLevoSzamSrc(hanyasraKattintott));
         eval(`hely${hanyasraKattintott}`).setAttribute("src", "szamok/white.svg");
 //        console.log(`hely${hanyasraKattintott}`);
@@ -65,3 +65,10 @@ function helyCsereFeherrel(hanyasraKattintott, elsoSzam, masodikSzam, harmadikSz
 
 hely1.addEventListener("click", () => {helyCsereFeherrel(1,2,4);});
 hely2.addEventListener("click", () => {helyCsereFeherrel(2,1,3,5);});
+hely3.addEventListener("click", () => {helyCsereFeherrel(3,2,6);});
+hely4.addEventListener("click", () => {helyCsereFeherrel(4,1,5,7);});
+hely5.addEventListener("click", () => {helyCsereFeherrel(5,2,4,6,8);});
+hely6.addEventListener("click", () => {helyCsereFeherrel(6,3,5,9);});
+hely7.addEventListener("click", () => {helyCsereFeherrel(7,4,8);});
+hely8.addEventListener("click", () => {helyCsereFeherrel(8,5,7,9);});
+hely9.addEventListener("click", () => {helyCsereFeherrel(9,6,8);});
