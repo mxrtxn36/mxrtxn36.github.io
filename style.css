@@ -1,0 +1,21 @@
+#images{
+    display: block;
+    text-align: center;
+}
+
+#images img{
+    height: 10%;
+    width: 10%;
+}
+
+#randomGomb {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+    transition-duration: 0.3s;
+  }
+  
+#randomGomb:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
